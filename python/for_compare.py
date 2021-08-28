@@ -2,5 +2,7 @@
 # 수열 A에서 X보다 작은 수를 모두 출력하는 프로그램
 # 입력: 첫줄에 N과 X/ 다음 줄에 수열A를 이루는 정수 N개
 N, X = map(int, input().split())
+A = list(map(int, input().split()))
 for i in range(N):
-    print()
+    if A[i] < X:
+        print(A[i], end=' ')

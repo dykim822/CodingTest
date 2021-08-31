@@ -6,3 +6,10 @@
 # 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력, 단어의 첫글자는 0번째
 # 예시 입력: baekjoon
 # 예시 출력: 1 0 -1 -1 2 -1 -1 -1 -1 4 3 -1 -1 7 5 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+S = input()
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+for i in alphabet:
+    if i in S:
+        print(S.index(i), end=' ')
+    else:
+        print(-1, end=' ')
